@@ -1,0 +1,18 @@
+.itemss{
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    padding: 10px;
+    /* margin: 5px 0; */
+    font-size: 16px;
+    list-style: none;
+}
+
+.button{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
