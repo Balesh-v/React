@@ -1,7 +1,7 @@
 import './AddData1.css'
 
-function AddData1 (){
-    let dataName = "Buy Milk";
+function AddData1 ({dataName}){
+    // let dataName = "Buy Milk";
     return (
          <div className="container text-center">
           <div className="call">

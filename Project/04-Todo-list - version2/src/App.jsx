@@ -1,20 +1,27 @@
 import AppName from "./Components/AppName";
 import AddTodo from "./Components/AddTodo";
-import AddData1 from "./Components/AddData1";
+import TodoItems from "./Components/TodoItems";
 import "./App.css";
-import { useState } from "react";
 
 
 function App() {
+
+
+  const todoitems = [
+    { id: 1, name: "Buy Milk" },
+    { id: 2, name: "Go to Gym" },
+    { id: 3, name: "Have a Bath" },
+  ];
   
-  // const [data, setData] = useState("");
+
 
   return (
     <>
       <center id="content-id">
          <AppName />
          <AddTodo />
-         <AddData1 />
+         <TodoItems todoItems={todoitems} />
+         
       </center>
     </>
   );
