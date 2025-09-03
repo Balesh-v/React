@@ -42,3 +42,27 @@ button{
   cursor: pointer;
   border-radius: 30px;
 }
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 93vw;
+    height: 90vh;
+    margin: 2px auto;
+  }
+  
+  .form-control {
+    width: 200px;
+    font-size: 18px;
+  }
+  
+  button {
+    width: 80px;
+    height: 40px;
+    font-size: 16px;
+  }
+  
+  #btn {
+    padding-left: 37px;
+  }
+  
+}

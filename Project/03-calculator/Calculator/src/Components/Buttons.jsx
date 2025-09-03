@@ -1,6 +1,6 @@
 const Buttons = (button) =>{
      
-    const btnA = ['C', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '+', '-', '/', '*', '=', '.', '(', ')', 'X'];
+    const btnA = ['C', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '+', '-', '/', '*', '=', '.', '(', ')',];
 
     let btnC = (e) => {
         const display = document.getElementById('display');
