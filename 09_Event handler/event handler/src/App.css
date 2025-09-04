@@ -10,3 +10,10 @@ h1{
     font-family: Arial, sans-serif;
     margin: 20px 0px 20px 0px;
 }
+
+.text-show{
+    text-align: center;
+    color: #e74c3c;
+    font-family: Arial, sans-serif;
+    margin: 10px 0px 20px 0px;
+}

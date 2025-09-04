@@ -7,7 +7,7 @@ import FoodInput from "./components/FoodInput";
 function App() {
   let foodItem = ["Dal", "Roti", "Green vegitable", "Milk", "foods"];
 
-   let textshow = "enter user food"
+   let textshow = "Enter Food Item";
 
    const HandlerChange = (e) => {
     console.log(e.target.value);
@@ -25,7 +25,7 @@ function App() {
 
       <h1>Healthy food</h1>
       <FoodInput  HandlerChange={HandlerChange}></FoodInput>
-      <p>{textshow}</p>
+      <p className="text-show">{textshow}</p>
       <ErrorMessage  items={foodItem} />
       <FoodItems items={foodItem}/>
 
