@@ -2,11 +2,19 @@ import AppName from "./Components/AppName";
 import AddTodo from "./Components/AddTodo";
 import TodoItem from "./Components/TodoItems";
 import "./App.css";
+import { useState } from "react";
 
 
 function App() {
-  
-  const tododata = ["Buy Milk", "Go to Gym", "Have a Bath" , "Go to Office"];
+
+  const initialTodoData = ["Buy Milk", "Go to Gym", "Have a Bath" , "Go to Office"];
+
+  const [newTodo, setNewTodo] = useState(initialTodoData);
+
+  const handleNewTodo = (newName) => {   
+   const newTodoList = [...newTodo, [newName]];
+    setNewTodo(newTodoList);
+  }
 
   
 
@@ -14,8 +22,8 @@ function App() {
     <>
       <center id="content-id">
          <AppName />
-         <AddTodo />
-         <TodoItem data={tododata} />
+         <AddTodo  onNewTodo={handleNewTodo} />
+         <TodoItem data={newTodo} />
       </center>
     </>
   );
