@@ -1,6 +1,7 @@
 import AppName from "./Components/AppName";
 import AddTodo from "./Components/AddTodo";
 import TodoItem from "./Components/TodoItems";
+import WelcomeMessage from "./Components/WelcomeMessage";
 import "./App.css";
 import { useState } from "react";
 
@@ -23,6 +24,7 @@ function App() {
       <center id="content-id">
          <AppName />
          <AddTodo  onNewTodo={handleNewTodo} />
+         <WelcomeMessage data={newTodo} />
          <TodoItem data={newTodo} />
       </center>
     </>
