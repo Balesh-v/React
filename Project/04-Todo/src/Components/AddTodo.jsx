@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './AddTodo.css';
+import { MdAdd } from "react-icons/md";
 
 function AddTodo({onNewTodo}){
 
@@ -21,7 +22,7 @@ function AddTodo({onNewTodo}){
               <input value={TodoName} id='fed1' type="text" placeholder="Enter Todo Here" onChange={handleChange}/>
             </div>
             <div className="col-2">
-              <button onClick={handleAddTodo} id='fed2' className="btn btn-success">Add Todo</button>
+              <button onClick={handleAddTodo} id='fed2' className="btn btn-success"><MdAdd /></button>
             </div>
           </div>
           <hr />
