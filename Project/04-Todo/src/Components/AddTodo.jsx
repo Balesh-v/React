@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import './AddTodo.css';
 import { MdAdd } from "react-icons/md";
+import './AddTodo.css';
 
 function AddTodo({onNewTodo}){
 

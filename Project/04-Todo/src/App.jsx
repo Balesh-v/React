@@ -2,14 +2,11 @@ import AppName from "./Components/AppName";
 import AddTodo from "./Components/AddTodo";
 import TodoItem from "./Components/TodoItems";
 import WelcomeMessage from "./Components/WelcomeMessage";
-import "./App.css";
 import { useState } from "react";
+import "./App.css";
 
 
 function App() {
-
-  // const initialTodoData = ["Buy Milk", "Go to Gym", "Have a Bath" , "Go to Office"];
-
   const [newTodo, setNewTodo] = useState([]);
 
   const handleNewTodo = (newName) => {   
@@ -21,8 +18,6 @@ function App() {
     const newTodoList = newTodo.filter((item) => item !== newItemname);
     setNewTodo(newTodoList);
   }
-
-  
 
   return (
     <>
