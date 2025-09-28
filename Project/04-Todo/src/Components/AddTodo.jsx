@@ -10,21 +10,23 @@ function AddTodo({onNewTodo}){
         setTodoName(event.target.value);
     }
 
-    const handleAddTodo = () => {
-        onNewTodo(TodoName);
-        setTodoName("");
+    const handleAddTodo = (event) => {
+      console.log(event)
+      event.preventDefault();
+         onNewTodo(TodoName);
+         setTodoName("");
     }
 
     return (
          <div className="container data ">
-          <div className="call">
+          <form className="call" onSubmit={handleAddTodo}>
             <div className="col-6 ">
               <input value={TodoName} id='fed1' type="text" placeholder="Enter Todo Here" onChange={handleChange}/>
             </div>
             <div className="col-2">
-              <button onClick={handleAddTodo} id='fed2' className="btn btn-success"><MdAdd /></button>
+              <button id='fed2' className="btn btn-success"><MdAdd /></button>
             </div>
-          </div>
+          </form>
           <hr />
         </div> 
     )
