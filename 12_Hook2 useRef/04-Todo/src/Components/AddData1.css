@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+.data-style{
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    height: 45px;
+    font-size: 16px;
+    width: 245px;
+    text-align: left;
+}
+
+.btn-danger{
+    margin-left: 190px;
+    margin-top: -50px;
+    height: 48px;
+    width: 44px;
+    font-size: 16px; 
+    text-align: center;
+}
