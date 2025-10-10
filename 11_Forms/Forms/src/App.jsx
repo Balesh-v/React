@@ -5,6 +5,7 @@ const App = () => {
 
   const [name, setName] = useState('name')
   const [text, setText] = useState('')
+  const [mycar , setCar] = useState("volvo")
 
   const handleChange = (event) => {
     setName(event.target.value)
@@ -20,10 +21,18 @@ const App = () => {
     setText(event.target.value)
   }
 
+  const handlesechange = (e) =>{
+    setCar(e.target.value)
+
+  }
+
   return (
     <div>
+
       <h1>Forms in React</h1>
+
       <form action="" onSubmit={handleSubmitChange}>
+        
        <label htmlFor="name">Name:
        <input type="text" id="name" value={name} onChange={handleChange}/>
        <p>{name}</p>
@@ -36,6 +45,12 @@ const App = () => {
        </label>
 
        <input type="submit" value="Submit" />
+
+       <select value={mycar} onChange={handlesechange}>
+        <option value="ford">ford</option>
+        <option value="volvo">volvo</option>
+        <option value="volvo">rolles</option>
+       </select>
       </form>
     </div>
   )

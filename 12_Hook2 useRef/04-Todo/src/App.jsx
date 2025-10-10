@@ -10,8 +10,15 @@ function App() {
   const [newTodo, setNewTodo] = useState([]);
 
   const handleNewTodo = (newName) => {   
-   const newTodoList = [...newTodo, [newName]];
-    setNewTodo(newTodoList);
+    // setNewTodo((currentValue) =>{
+    //   const newTodoList = [...currentValue, [newName]];
+    // });
+    // return newTodoList
+    
+    setNewTodo((currentValue) =>
+      [...currentValue, [newName]]
+    );
+
   }
 
   const handleDelete = (newItemname) => {
