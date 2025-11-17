@@ -2,7 +2,7 @@
 import Card from "./Components/Card";
 
 function App (){
-  return <div>
+  return <div className="App">
     <Card />
     <Card />
     <Card />
