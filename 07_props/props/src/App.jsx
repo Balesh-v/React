@@ -1,5 +1,6 @@
 import ErrorMessage from "./components/ErrorMessage";
 import FoodItems from "./components/FoodItems";
+import Heading  from "./components/Heading";
 
 function App() {
   let foodItem = ["Dal", "Roti", "Green vegitable", "Milk", "foods"];
@@ -8,7 +9,7 @@ function App() {
 
   return (
     <>
-      <h1>Healthy food</h1>
+      <Heading />
       <ErrorMessage  items={foodItem} />
       <FoodItems items={foodItem}/>
     </>

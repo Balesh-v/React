@@ -1,6 +1,6 @@
 function App() {
-  // let foodItem = ["Dal", "Roti", "Green vegitable", "Milk", "foods"];
-  let foodItem = [];
+  let foodItem = ["Dal", "Roti", "Green vegitable", "Milk", "foods"];
+  // let foodItem = [];
 
   // if (foodItem.length === 0) {
   //   return <h1>No food items found</h1>;
