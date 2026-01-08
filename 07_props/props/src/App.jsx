@@ -1,6 +1,7 @@
 import ErrorMessage from "./components/ErrorMessage";
 import FoodItems from "./components/FoodItems";
 import Heading  from "./components/Heading";
+import './App.css'
 
 function App() {
   let foodItem = ["Dal", "Roti", "Green vegitable", "Milk", "foods"];
