@@ -4,8 +4,8 @@ import FoodItems from "./components/FoodItems";
 
 
 function App() {
-  let foodItem = ["Dal", "Roti", "Green vegitable", "Milk", "foods"];
-  // let foodItem = [];
+  // let foodItem = ["Dal", "Roti", "Green vegitable", "Milk", "foods"];
+  let foodItem = [];
 
 
   return (
