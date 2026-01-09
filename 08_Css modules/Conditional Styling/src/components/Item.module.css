@@ -1,0 +1,24 @@
+.kg-item{
+    background-color: rgb(255, 47, 47);
+    color:rgb(250, 248, 248);
+    padding: 30px;
+    font-size: 21px;
+    border: 1px solid black;
+}
+
+.full-rating {
+    background-color: rgb(47, 255, 54);
+    color: rgb(66, 231, 80);
+}
+
+.half-rating {
+    background-color: rgb(255, 235, 47);
+    color: rgb(0, 64, 240);
+}
+
+.no-rating {
+    background-color: rgb(189, 189, 189);
+    color: black;
+}
+
+
