@@ -1,0 +1,14 @@
+.call {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  gap: 12px;
+}
+
+#fed1 {
+  height: 35px;
+}
