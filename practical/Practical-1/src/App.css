@@ -1,0 +1,40 @@
+.Parent{
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+  width: 24%;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Top{
+  display: flex;
+  gap: 60px;
+}
+
+.images{
+  /* border: 1px solid white; */
+  width: 60px;
+  height: 60px;
+  padding: 50px;
+  margin-top: 30px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
