@@ -79,3 +79,18 @@ button{
   display: flex;
   justify-content: space-around; 
 }
+/* 
+ul{
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  
+} */
+
+/* li{
+  width: 400%;
+
+} */
