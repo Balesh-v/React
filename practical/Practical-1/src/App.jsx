@@ -1,4 +1,4 @@
-import Card from "./Components/card"
+import Cards from "./Components/Cards"
 import "./App.css"
 
 const App = () => {
@@ -24,11 +24,7 @@ const App = () => {
       
   return (
     <>
-    <div className="cotainer">
-      {datas.map((item)=>{
-       return   <Card datas={item.Name} Role={item.Role}/>
-      })}
-    </div>
+      <Cards datases = {datas}/>
     </>
   )
 }

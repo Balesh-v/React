@@ -5,8 +5,15 @@ import { FaTwitter } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
+import styled from "styled-components";
+
+
 
 const Card = (props) => {
+
+const Buttonweb = styled.button({
+   backgroundColor : "red"
+})
 
   return (
     <>
@@ -40,6 +47,7 @@ const Card = (props) => {
         <div className="btn">
           <button>Subscribe</button>
           <button>Message</button>
+          <Buttonweb>Message</Buttonweb>
         </div>
       </div>
       </div>
