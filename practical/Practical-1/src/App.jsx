@@ -1,4 +1,5 @@
 import Cards from "./Components/Cards"
+import Container from "./Components/Container"
 import "./App.css"
 
 const App = () => {
@@ -23,9 +24,9 @@ const App = () => {
    ]
       
   return (
-    <>
+    <Container>
       <Cards datases = {datas}/>
-    </>
+    </Container>
   )
 }
 
