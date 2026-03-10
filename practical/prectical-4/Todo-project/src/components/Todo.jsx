@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../Styles/Todo-style.css'
 import { useState } from 'react'
 import { FaCheck } from "react-icons/fa";
@@ -8,6 +8,7 @@ const Todo = () => {
 
    const [input, setInput] = useState('')
    const [task , setTask] = useState([])
+   const [dateString, setDateString] = useState('')
 
    const handleChange = (e) => {
        setInput(e.target.value)
@@ -23,12 +24,39 @@ const Todo = () => {
        setInput('')
    }
 
+
+   // date and time
+
+//    const date = new Date()
+//    const dateString = date.toLocaleDateString()
+//    const timeString = date.toLocaleTimeString()
+
+
+
+    useEffect(() => {
+      const intervalId = setInterval(() => {
+      const date = new Date()
+      const dateString = date.toLocaleDateString()
+      const timeString = date.toLocaleTimeString()
+      setDateString(`${dateString} - ${timeString}`)
+   }, 1000)
+
+   return () => clearInterval(intervalId)
+
+    } , [])
+
+    const handleClick = (item) => {
+        setTask(task.filter((task) => task !== item))
+        // console.log(item)
+    }
+
   return (
     <>
     <section className='todo-container'>
         <header>
             <div>
                 <h1>Todo project</h1>
+                <h2>{dateString}</h2>
             </div>
         </header>
         <section className='form'>
@@ -49,12 +77,15 @@ const Todo = () => {
 
                         <div className='btn-container'>
                            <button><FaCheck /></button>
-                           <button><MdDelete /></button>
+                           <button onClick={() => handleClick(item)}><MdDelete /></button>
                         </div>
                     </li>
                 ))}
             </ul>
         </section>
+        </section>
+        <section className='clear-container'>
+            <button className='clear-btn' onClick={() => setTask([])}>Clear All</button>
         </section>
     </section>
     </>
