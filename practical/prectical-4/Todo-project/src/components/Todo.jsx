@@ -25,14 +25,6 @@ const Todo = () => {
    }
 
 
-   // date and time
-
-//    const date = new Date()
-//    const dateString = date.toLocaleDateString()
-//    const timeString = date.toLocaleTimeString()
-
-
-
     useEffect(() => {
       const intervalId = setInterval(() => {
       const date = new Date()
