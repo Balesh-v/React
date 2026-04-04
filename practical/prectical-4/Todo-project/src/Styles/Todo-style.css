@@ -69,3 +69,12 @@ ul li{
     justify-content: center;
     margin-top: 0px;
 }
+
+.checkedList{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.nonCheckedList{
+    text-decoration: none;
+}
